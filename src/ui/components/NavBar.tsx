@@ -10,35 +10,37 @@ export const NavBar = () => {
         })
     }
 
+    const logoUrl = '/assets/logo.png'
+
     return (
-        <nav className="navbar navbar-expand-sm navbar-light navbar--background p-2 px-5">
+        <nav className="navbar navbar-expand-sm navbar-light navbar--background p-3 px-5">
             
             <Link 
                 className="navbar-brand fw-bold"  
                 to="/"
             >
-                Heroes
+                <img src={logoUrl} alt='logo' className='logo'/>
             </Link>
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
                     <NavLink 
-                        className={({ isActive }) => `nav-item nav-link ${ isActive ? 'active' : ''} `} 
+                        className={({ isActive }) => `nav-item nav-link rounded ${ isActive ? 'active link__hover' : ''} `} 
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
                     <NavLink 
-                        className={({ isActive }) => `nav-item nav-link ${ isActive ? 'active' : ''} `} 
+                        className={({ isActive }) => `nav-item nav-link rounded ${ isActive ? 'active link__hover' : ''} `} 
 
                         to="/dc"
                     >
                         DC
                     </NavLink>
                     <NavLink 
-                        className={({ isActive }) => `nav-item nav-link ${ isActive ? 'active' : ''} `} 
+                        className={({ isActive }) => `nav-item nav-link rounded ${ isActive ? 'active link__hover' : ''} `} 
 
                         to="/search"
                     >
