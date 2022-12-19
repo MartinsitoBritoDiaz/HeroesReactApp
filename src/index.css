@@ -11,6 +11,11 @@ img{
 
 .logo{
     width: 2rem;
+    transition: transform .2s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 .navbar--background{
@@ -19,8 +24,23 @@ img{
 
 .link__hover,
 .link__hover:hover{
-    background-color:   #5dade2 ;
+    background-color:   #8ed2ff  ;
     color: white;
+}
+
+/* Link nav bar */
+.link--container{
+    width: 40%;
+}
+
+.link-img{
+    width: 2rem;
+    height: auto;
+    transition: transform .2s;
+}
+
+.link-img:hover{
+    transform: scale(1.4);
 }
 
 .hero--list{
@@ -50,4 +70,20 @@ img{
 
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.btn-background{
+    background-color:  #ec2929;
+    transition: transform .2s;
+}
+
+.btn-background:hover{
+    background-color:  #ec2929;
+    transform: scale(1.1);
+}
+
+/* Return icon */
+.img-return{
+    width: 1.5rem;
+    height: auto;
 }

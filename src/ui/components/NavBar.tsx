@@ -16,7 +16,7 @@ export const NavBar = () => {
         <nav className="navbar navbar-expand-sm navbar-light navbar--background p-3 px-5">
             
             <Link 
-                className="navbar-brand fw-bold"  
+                className="navbar-brand fw-bold animate__animated animate__headShake"  
                 to="/"
             >
                 <img src={logoUrl} alt='logo' className='logo'/>
@@ -56,7 +56,7 @@ export const NavBar = () => {
                     </span>
 
                     <button 
-                        className='nav-item nav-link btn btn-secondary text-white'
+                        className='nav-item nav-link btn btn-background  text-white'
                         onClick={onLogOut}
                     >
                         LogOut
