@@ -15,8 +15,6 @@ const init = () => {
     }
 }
 
-console.log(localStorage.getItem('user'))
-
 export const AuthProvider = ({ children } : any) => {
     const [ authState , dispatch] = useReducer( authReducer, initialState, init);
     const login = (name: string) => {
