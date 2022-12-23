@@ -14,7 +14,7 @@ export const NavBar = () => {
         })
     }
 
-    const logoUrl = '/assets/logo.png'
+    const logoUrl = '/logo.png'
 
     return (
         <nav className="navbar navbar-expand-sm navbar-light navbar--background p-3 px-5">

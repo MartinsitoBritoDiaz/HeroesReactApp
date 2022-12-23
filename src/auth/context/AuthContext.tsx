@@ -3,7 +3,8 @@ import { createContext } from "react";
 interface UserContext {
     login: (name: string) => void;
     logout: () => void;
-    authState?: {type: string, payload: {}};
+    authState?: any;
+    logged?: boolean;
     user?: {id: string, name: string};
 }
 

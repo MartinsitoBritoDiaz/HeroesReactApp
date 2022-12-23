@@ -8,7 +8,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }: any) => {
-  const heroImageUrl = `/assets/heroes/${id}.jpg`;
+  const heroImageUrl = `/heroes/${id}.jpg`;
 
   return (
     <div className="card-hero">
@@ -25,7 +25,7 @@ export const HeroCard = ({
 
         <Link to={`/hero/${id}`}>
           <div className="link--container">
-            <img className="animate__animated animate__flash link-img" src="/assets/superman.png"></img>
+            <img className="animate__animated animate__flash link-img" src="/superman.png"></img>
           </div>
         </Link>
       </div>

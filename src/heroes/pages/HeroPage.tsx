@@ -24,7 +24,7 @@ export const HeroPage = () => {
     <div className='row mt-5'>
       <div className='col-4 animate__animated animate__fadeInLeft'>
         <img 
-          src={`/assets/heroes/${ heroId }.jpg`} 
+          src={`/heroes/${ heroId }.jpg`} 
           alt={hero.superhero}
           className="img-thumbnail"
         />
@@ -49,7 +49,7 @@ export const HeroPage = () => {
           onClick={ onNavigateBack }
         >
           <img
-            src='/assets/return.png'
+            src='/return.png'
             alt='return icon'
             className='img-return'
           />
