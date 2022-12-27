@@ -9,7 +9,7 @@ export const LoginPage = () => {
   
   const onLogin = () => {
     const lastPath = localStorage.getItem('lastPath') || '/';
-    UserContext?.login('Martinsito Diaz');
+    UserContext?.login?.('Martinsito Diaz');
     navigate(lastPath, {
       replace: true,
     })
